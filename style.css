@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-style: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+  
+:root {
+    --theme-color-black: #333333; /* rgba(51, 51, 51, 1) */
+    --theme-color-brown: #423A3A; 
+    --theme-color-red: #952ce4;
+    --theme-color-white: #FEFFFF; /* rgba(254, 255, 255, 1) */
+}
+  
+/* ---------- MAIN BODY DECLERATIONS ---------- */
+
+html, body {
+    background-color: var(--theme-color-white);
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  input {
+    font-family: 'Rubik', sans-serif;
+  }
+  .mobile-container {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+  }
+  .hero-image-desktop {
+    display: none;
+  }
+  /* ---------- HERO BANNER DECLERATIONS ---------- */
+  .hero-banner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-banner .logo-wrapper {
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: auto;
+  }
+  .logo-wrapper img {
+    display: block;
+    height: 2.5rem;
+    margin: 0 auto;
+    width: auto;
+  }
+  .hero-banner .hero-image {
+    background-image: url('./destop-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 376px;
+    width: 100%;
+  }
+  /* ---------- TEXT INFO DECLERATIONS ---------- */
+  .text-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .text-info > * {
+    padding: 0 2.5rem 1rem;
+  }
+  /* intended for the first h2 within .text-info */
+  .text-info h2:nth-child(1) {
+    color: var(--theme-color-red);
+    font-weight: normal;
+    padding-top: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .text-info h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--theme-color-brown);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  .text-info p {
+    color: var(--theme-color-black);
+    line-height: 24px;
+  }
+
+  .email__form {
+    width: 100%;
+    /* background-color: red; */
+  }
+  .input__box {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #eee;
+    background-color: #eee;
+    border-radius: 100px;
+    position: relative;
+  }
+
+
+  .input__box input {
+    padding: .3rem 2rem;
+    color: #333333;
+    background-color: transparent;
+    outline: none;
+  }
+
+  .input__box button {
+    background-color: var(--theme-color-red);
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    padding: .7rem .7rem;
+    text-transform: uppercase;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+  }
+  
+  @media only screen and (min-width: 768px) {
+    body {
+      background-image: url('./destop-bg.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      height: 100%;
+    }
+    main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: inherit;
+      max-width: 100%;
+      margin: 0 auto;
+      padding-left: 3.5rem;
+    }
+    .mobile-container {
+      width: 45vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+    }
+    .hero-banner .logo-wrapper {
+      margin-left: 3.5rem;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .logo-wrapper img {
+      margin: 0 0 0;
+      padding-left: 2.5rem;
+      height: 50px;
+    }
+    .hero-image {
+      display: none;
+    }
+    .text-info {
+      text-align: left;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start;
+    }
+    .text-info h2 {
+      font-size: 3rem;
+    }
+    .text-info p {
+      font-size: 16px;
+    }
+    .text-info input {
+      font-size: 16px;
+    }
+    .text-info .email-signup {
+      margin: 1rem 0 7rem;
+    }
+    .hero-image-desktop {
+      display: block;
+      height: 100%;
+      width: 55vw;
+    }
+    .hero-image-desktop img {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+    }
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
